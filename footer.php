@@ -1,3 +1,5 @@
+                <div class="clearfix"></div>
+
 		<footer id="footer" clas="source-org vcard copyright">
 			<small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></small>
 		</footer>
