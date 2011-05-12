@@ -62,20 +62,20 @@
 	<meta name="google-site-verification" content="">
 	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
 	
-	<meta name="author" content="Your Name Here">
-	<meta name="Copyright" content="Copyright Your Name Here 2011. All Rights Reserved.">
+	<meta name="author" content="一分钟学堂">
+	<meta name="Copyright" content="Copyright 一分钟学堂@2011. All Rights Reserved.">
 
 	<!-- Dublin Core Metadata : http://dublincore.org/ -->
-	<meta name="DC.title" content="Project Name">
-	<meta name="DC.subject" content="What you're about.">
-	<meta name="DC.creator" content="Who made this site.">
+	<meta name="DC.title" content="一分钟学堂">
+	<meta name="DC.subject" content="微知识线上学习社区">
+	<meta name="DC.creator" content="一分钟学堂成员">
 	
 	<!--  Mobile Viewport meta tag
 	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
 	device-width : Occupy full width of the screen in its current orientation
 	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
 	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width -->
-	<!-- Uncomment to use � use thoughtfully!
+	<!-- Uncomment to use Ñ use thoughtfully!
 	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
 	-->
 	
