@@ -9,6 +9,7 @@ a {
 
 #page-wrap {
   margin: auto;
+  background: url(_/img/wrap-bg.png) 100% repeat-y;
   border-style: solid;
   border-color: #fff;
   border-left-width: 10px;
@@ -25,6 +26,12 @@ a {
   border-left-width: 5px;
   border-right-width: 5px; }
 
+#content {
+  border-style: solid;
+  border-color: #fff;
+  border-left-width: 5px;
+  border-right-width: 5px; }
+
 #lessons {
   width: 75%;
   float: left; }
@@ -36,6 +43,3 @@ a {
 #s {
   padding: 5px;
   border: 1px solid #ccc; }
-
-#footer {
-  width: 100%; }
