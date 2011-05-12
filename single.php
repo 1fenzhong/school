@@ -1,6 +1,10 @@
 <?php get_header(); ?>
 
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<section id="content">
+
+        <div id ="lessons">
+
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			
@@ -22,10 +26,17 @@
 			
 		</article>
 
-	<?php comments_template(); ?>
+                <?php comments_template(); ?>
 
-	<?php endwhile; endif; ?>
+                <?php endwhile; endif; ?>
+
+
+        </div>
 	
 <?php get_sidebar(); ?>
+
+<div class="clearfix"></div>
+
+</section>
 
 <?php get_footer(); ?>

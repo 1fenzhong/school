@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
-		<?php if (have_posts()) : ?>
+<section id="content">
+
+        <?php if (have_posts()) : ?>
 
  			<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 
@@ -26,6 +28,8 @@
 				<h2 class="pagetitle">Blog Archives</h2>
 			
 			<?php } ?>
+
+                        <div id="lessons">
 
 			<?php include (TEMPLATEPATH . '/_/inc/nav.php' ); ?>
 
@@ -53,6 +57,12 @@
 
 	<?php endif; ?>
 
+        </div>
+
 <?php get_sidebar(); ?>
+
+<div class="clearfix"></div>
+
+</section>
 
 <?php get_footer(); ?>

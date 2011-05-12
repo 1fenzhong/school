@@ -1,8 +1,12 @@
 <?php get_header(); ?>
 
+<section id="content">
+
 	<?php if (have_posts()) : ?>
 
 		<h2>Search Results</h2>
+
+                <div id="lessons">
 
 		<?php include (TEMPLATEPATH . '/_/inc/nav.php' ); ?>
 
@@ -32,6 +36,12 @@
 
 	<?php endif; ?>
 
+        </div>
+
 <?php get_sidebar(); ?>
+
+<div class="clearfix"></div>
+
+</section>
 
 <?php get_footer(); ?>

@@ -1,9 +1,11 @@
 <?php get_header(); ?>
 
-<div id="lessons">
+<section id="content">
 
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <div id="lessons">
 
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 
 			<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
@@ -22,18 +24,22 @@
 
 		</article>
 
-	<?php endwhile; ?>
+                <?php endwhile; ?>
 
-	<?php include (TEMPLATEPATH . '/_/inc/nav.php' ); ?>
+                <?php include (TEMPLATEPATH . '/_/inc/nav.php' ); ?>
 
-	<?php else : ?>
+                <?php else : ?>
 
 		<h2>Not Found</h2>
 
-	<?php endif; ?>
+                <?php endif; ?>
 
-</div>
+        </div>
 
-<?php get_sidebar(); ?>
+        <?php get_sidebar(); ?>
+
+        <div class="clearfix"></div>
+                
+</section>
 
 <?php get_footer(); ?>
