@@ -7,7 +7,7 @@
 <!--[if gt IE 9]><!--><html class="no-js" <?php language_attributes(); ?>><!--<![endif]-->
 <!-- the "no-js" class is for Modernizr. -->
 
-<head id="www-sitename-com" data-template-set="html5-reset-wordpress-theme" profile="http://gmpg.org/xfn/11">
+<head id="1fenzhong" data-template-set="html5-reset-wordpress-theme" profile="http://gmpg.org/xfn/11">
 
 	<meta charset="<?php bloginfo('charset'); ?>">
 	
