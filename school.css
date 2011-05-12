@@ -1,5 +1,5 @@
 body {
-  background: url(_/img/body-bg.png) 0 50px repeat-x; }
+  background: url(_/img/body-bg.png) 0 60px repeat-x; }
 
 a {
   text-decoration: none; }
@@ -7,13 +7,23 @@ a {
     color: #fff284;
     background-color: #0073ea; }
 
-#header {
-  width: 100%; }
-
 #page-wrap {
-  width: 1000px;
   margin: auto;
-  border: 20px solid #fff; }
+  border-style: solid;
+  border-color: #fff;
+  border-left-width: 10px;
+  border-right-width: 10px; }
+
+#header {
+  height: 400px;
+  margin: auto;
+  background: url(_/img/header-bg.png) repeat-x;
+  box-shadow: 0 -65px 60px 30px #cccccc;
+  border-style: solid;
+  border-color: #fff;
+  border-top-width: 5px;
+  border-left-width: 5px;
+  border-right-width: 5px; }
 
 #lessons {
   width: 75%;
@@ -22,3 +32,10 @@ a {
 #sidebar {
   width: 25%;
   float: left; }
+
+#s {
+  padding: 5px;
+  border: 1px solid #ccc; }
+
+#footer {
+  width: 100%; }
