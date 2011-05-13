@@ -71,6 +71,7 @@ a {
         background: #000; }
 
 #content {
+  padding: 5px;
   border-style: solid;
   border-color: #fff;
   border-left-width: 5px;
@@ -79,6 +80,14 @@ a {
 #lessons {
   width: 75%;
   float: left; }
+  #lessons .post {
+    margin-right: 10px;
+    padding: 15px;
+    /* background:#fffbe1; */ }
+    #lessons .post:hover {
+      background-color: #fffbdc; }
+    #lessons .post h2 {
+      font-size: 16px; }
 
 #sidebar {
   width: 25%;
