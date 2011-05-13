@@ -108,12 +108,24 @@
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
 	<?php wp_head(); ?>
+
+	<script src="<?php bloginfo('template_directory'); ?>/_/js/jquery.boxshadow.js"></script>
+
+        <script type="text/javascript">
+		$(document).ready(function(){
+			if ($.browser.msie) {
+				$('#page-wrap .container').boxShadow( 0, 0, 60px, 30px "#ccc")
+			} 
+		});
+	</script>
 	
 </head>
 
 <body <?php body_class(); ?>>
 	
 	<div id="page-wrap"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+                <div class="container">
 
 		<header id="header">
 
