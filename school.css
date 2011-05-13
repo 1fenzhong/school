@@ -1,5 +1,5 @@
-html.no-boxshadow {
-  background: url(_/img/ie-shadow.png) 50% repeat-y; }
+html.boxshadow {
+  /* background:url(_/img/ie-shadow.png) 50% repeat-y; */ }
 
 body {
   background: url(_/img/body-bg.png) 0 65px repeat-x; }
@@ -41,12 +41,33 @@ a {
     #header .nav li {
       display: inline; }
     #header .nav a {
-      line-height: 52px;
+      line-height: 58px;
       color: #fff;
       font-weight: bold;
-      font-size: 20px; }
+      font-size: 20px;
+      display: block;
+      width: 62px;
+      height: 58px;
+      position: relative;
+      top: -5px;
+      float: left;
+      text-align: center; }
       #header .nav a:hover {
         background-color: #f00; }
+  #header #searchform {
+    float: right;
+    padding: 10px; }
+    #header #searchform #s:focus {
+      background-color: #fffccc;
+      font-weight: bold;
+      border: 1px solid #ffa0a0; }
+    #header #searchform #searchsubmit {
+      font-weight: bold;
+      border: none;
+      padding: 5px 8px; }
+      #header #searchform #searchsubmit:hover {
+        color: #fff;
+        background: #000; }
 
 #content {
   border-style: solid;
