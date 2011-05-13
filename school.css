@@ -8,7 +8,7 @@ a {
   padding: 1px 2px;
   text-decoration: none; }
   a:hover {
-    color: #fff284;
+    color: #fff700;
     background-color: #0073ea; }
 
 #page-wrap {
@@ -41,27 +41,22 @@ a {
     #header .nav li {
       display: inline; }
     #header .nav a {
-      line-height: 58px;
+      line-height: 52px;
       color: #fff;
       font-weight: bold;
-      font-size: 20px;
-      display: block;
-      width: 62px;
-      height: 58px;
-      position: relative;
-      top: -5px;
-      float: left;
-      text-align: center; }
+      font-size: 20px; }
       #header .nav a:hover {
-        color: #f00404;
-        background-color: #fff; }
+        background-color: #000; }
+  #header .con {
+    height: 100%;
+    background: url(_/img/header-con-bg.png) 100% repeat-y; }
   #header #searchform {
     float: right;
     padding: 10px; }
     #header #searchform #s:focus {
-      background-color: #fffccc;
+      background-color: #fffdd0;
       font-weight: bold;
-      border: 1px solid #ffa0a0; }
+      border: 1px solid #ff0800; }
     #header #searchform #searchsubmit {
       font-weight: bold;
       border: none;
@@ -71,6 +66,8 @@ a {
         background-color: #000; }
 
 #content {
+  height: 100%;
+  background: url(_/img/wrap-bg.png) 100% repeat-y;
   padding: 0 5px;
   border-style: solid;
   border-color: #fff;
@@ -82,12 +79,13 @@ a {
   float: left; }
   #lessons .post {
     margin-right: 10px;
-    padding: 10px;
-    /* background:#fffbe1; */ }
+    padding: 10px; }
     #lessons .post:hover {
-      background-color: #fffbdc; }
+      background-color: #fffadc; }
     #lessons .post h2 {
       font-size: 16px; }
+  #lessons .post h1 {
+    font-size: 16px; }
 
 #respond h2 {
   display: inline-block;
@@ -98,8 +96,10 @@ a {
   margin: 5px 0; }
 
 #comment {
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   padding: 5px; }
+  #comment:focus {
+    border: 1px solid #ff0800; }
 
 #submit {
   margin-top: 5px;
@@ -108,7 +108,7 @@ a {
   background-color: #e3e3e3; }
   #submit:hover {
     color: #fff;
-    background-color: #0073ea; }
+    background-color: #000; }
 
 #sidebar {
   /* background-color:#edf3f3; */
@@ -126,6 +126,11 @@ a {
 #s {
   padding: 5px;
   border: 1px solid #ccc; }
+
+#footer {
+  padding: 10px 5px;
+  background-color: #fff;
+  text-align: right; }
 
 .boxshadow #header {
   box-shadow: 0 -65px 60px 30px #cccccc; }
