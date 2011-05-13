@@ -1,5 +1,9 @@
 <?php get_header(); ?>
 
+<section id="content">
+
+        <div id="lessons">
+
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			
 		<article class="post" id="post-<?php the_ID(); ?>">
@@ -24,6 +28,12 @@
 
 		<?php endwhile; endif; ?>
 
+        </div>
+
 <?php get_sidebar(); ?>
+
+<div class="clearfix"></div>
+
+</section>
 
 <?php get_footer(); ?>
