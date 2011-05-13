@@ -19,6 +19,7 @@ a {
   border-right-width: 10px; }
 
 #header {
+  position: relative;
   height: 400px;
   margin: auto;
   background: url(_/img/header-bg.png) repeat-x;
@@ -27,6 +28,13 @@ a {
   border-top-width: 5px;
   border-left-width: 5px;
   border-right-width: 5px; }
+  #header .nav {
+    width: 960px;
+    height: 52px;
+    position: absolute;
+    top: 51px;
+    left: -5px;
+    background: url(_/img/header-nav-bg.png) repeat-x; }
 
 #content {
   border-style: solid;
