@@ -132,5 +132,5 @@ a {
   background-color: #fff;
   text-align: right; }
 
-.boxshadow #header {
-  box-shadow: 0 -65px 60px 30px #cccccc; }
+.boxshadow #page-wrap .container {
+  box-shadow: 0 0 60px 30px #ccc; }
