@@ -116,7 +116,11 @@
 	<div id="page-wrap"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
 
 		<header id="header">
-			<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
-			<div class="description"><?php bloginfo('description'); ?></div>
+                                <h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
+                                <div class="description"><?php bloginfo('description'); ?></div>
+
+                        <div class="nav">
+                                <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+                        </div>
 		</header>
 
