@@ -54,7 +54,7 @@ a {
       text-align: center; }
       #header .nav a:hover {
         color: #f00404;
-        background: #fff; }
+        background-color: #fff; }
   #header #searchform {
     float: right;
     padding: 10px; }
@@ -68,10 +68,10 @@ a {
       padding: 5px 8px; }
       #header #searchform #searchsubmit:hover {
         color: #fff;
-        background: #000; }
+        background-color: #000; }
 
 #content {
-  padding: 5px;
+  padding: 0 5px;
   border-style: solid;
   border-color: #fff;
   border-left-width: 5px;
@@ -82,7 +82,7 @@ a {
   float: left; }
   #lessons .post {
     margin-right: 10px;
-    padding: 15px;
+    padding: 10px;
     /* background:#fffbe1; */ }
     #lessons .post:hover {
       background-color: #fffbdc; }
@@ -90,8 +90,11 @@ a {
       font-size: 16px; }
 
 #sidebar {
+  /* background-color:#edf3f3; */
   width: 25%;
   float: left; }
+  #sidebar .widget {
+    text-align: right; }
 
 #s {
   padding: 5px;
