@@ -53,7 +53,8 @@ a {
       float: left;
       text-align: center; }
       #header .nav a:hover {
-        background-color: #f00; }
+        color: #f00404;
+        background: #fff; }
   #header #searchform {
     float: right;
     padding: 10px; }
