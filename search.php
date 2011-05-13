@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
-<section id="content">
+<div id="content">
+
+        <div id="lessons">
 
 	<?php if (have_posts()) : ?>
 
 		<h2>Search Results</h2>
-
-                <div id="lessons">
 
 		<?php include (TEMPLATEPATH . '/_/inc/nav.php' ); ?>
 
