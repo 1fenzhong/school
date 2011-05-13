@@ -89,12 +89,39 @@ a {
     #lessons .post h2 {
       font-size: 16px; }
 
+#respond h2 {
+  display: inline-block;
+  background-color: #ffe28a;
+  padding: 1px 2px; }
+
+#commentform p {
+  margin: 5px 0; }
+
+#comment {
+  border: 1px solid #ddd;
+  padding: 5px; }
+
+#submit {
+  margin-top: 5px;
+  border: none;
+  padding: 5px 10px;
+  background-color: #e3e3e3; }
+  #submit:hover {
+    color: #fff;
+    background-color: #0073ea; }
+
 #sidebar {
   /* background-color:#edf3f3; */
   width: 25%;
   float: left; }
   #sidebar .widget {
-    text-align: right; }
+    text-align: right;
+    padding: 10px 5px 0 0; }
+    #sidebar .widget h2 {
+      font-size: 15px;
+      margin-bottom: 5px; }
+  #sidebar .widget_categories {
+    font-size: 14px; }
 
 #s {
   padding: 5px;
