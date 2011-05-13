@@ -1,3 +1,6 @@
+html.no-boxshadow {
+  background: url(_/img/ie-shadow.png) 50% repeat-y; }
+
 body {
   background: url(_/img/body-bg.png) 0 65px repeat-x; }
 
@@ -19,7 +22,6 @@ a {
   height: 400px;
   margin: auto;
   background: url(_/img/header-bg.png) repeat-x;
-  box-shadow: 0 -65px 60px 30px #cccccc;
   border-style: solid;
   border-color: #fff;
   border-top-width: 5px;
@@ -43,3 +45,6 @@ a {
 #s {
   padding: 5px;
   border: 1px solid #ccc; }
+
+.boxshadow #header {
+  box-shadow: 0 -65px 60px 30px #cccccc; }
