@@ -117,14 +117,17 @@
 
 		<header id="header">
 
-                        <?php include (TEMPLATEPATH . '/searchform.php'); ?>
+                        <div class="con">
 
-                        <div class="nav">
-                                <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+                                <?php include (TEMPLATEPATH . '/searchform.php'); ?>
+
+                                <div class="nav">
+                                        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+                                </div>
+
+                                <h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
+                                <div class="description"><?php bloginfo('description'); ?></div>
+
                         </div>
 
-                        <h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
-                        <div class="description"><?php bloginfo('description'); ?></div>
-
 		</header>
-
