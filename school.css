@@ -5,6 +5,7 @@ body {
   background: url(_/img/body-bg.png) 0 65px repeat-x; }
 
 a {
+  padding: 1px 2px;
   text-decoration: none; }
   a:hover {
     color: #fff284;
@@ -35,6 +36,17 @@ a {
     top: 51px;
     left: -5px;
     background: url(_/img/header-nav-bg.png) repeat-x; }
+    #header .nav ul {
+      margin: auto 10px; }
+    #header .nav li {
+      display: inline; }
+    #header .nav a {
+      line-height: 52px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px; }
+      #header .nav a:hover {
+        background-color: #f00; }
 
 #content {
   border-style: solid;
