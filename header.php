@@ -112,13 +112,14 @@
 	<script src="<?php bloginfo('template_directory'); ?>/_/js/jquery.boxshadow.js"></script>
 
         <script type="text/javascript">
-		$(document).ready(function(){
-			if ($.browser.msie) {
-				$('#page-wrap .container').boxShadow( 0, 0, 60px, 30px "#ccc")
-			} 
-		});
+          $(document).ready(function(){
+              $(".home .post").click(function(e){
+                  e.preventDefault();
+                  window.location = $(this).attr("url");
+              });
+          });
 	</script>
-	
+
 </head>
 
 <body <?php body_class(); ?>>
