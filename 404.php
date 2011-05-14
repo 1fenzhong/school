@@ -1,7 +1,17 @@
 <?php get_header(); ?>
 
-	<h2>Error 404 - Page Not Found</h2>
+<section id="content">
+
+        <div id="lessons">
+
+	<h2>什么是404？ - 找不到</h2>
+
+        </div>
 
 <?php get_sidebar(); ?>
+
+<div class="clearfix"></div>
+
+</section>
 
 <?php get_footer(); ?>
