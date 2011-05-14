@@ -40,7 +40,8 @@
 //nav menu function
     if (function_exists('register_nav_menus')){
       register_nav_menus( array(
-          'header-menu' => __( '头部自定义菜单' ),
+          'header-navi-menu' => __( '头部导航菜单' ),
+          'header-user-menu' => __( '头部用户菜单' ),          
           'footer-menu' => __( '底部自定义菜单' ) 
                                 )
                           );
