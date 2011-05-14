@@ -127,14 +127,16 @@ a {
   float: left; }
   #lessons .post {
     margin-right: 10px;
-    padding: 10px;
-    /* &:hover { background-color:#fffadc; } */ }
+    padding: 10px; }
     #lessons .post:hover {
       background-color: #f4f0ec; }
     #lessons .post h2 {
       font-size: 16px; }
   #lessons .post h1 {
     font-size: 16px; }
+
+.single #lessons .post {
+  background-color: #f4f0ec; }
 
 #respond h2 {
   display: inline-block;
