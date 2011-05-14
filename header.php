@@ -133,6 +133,8 @@
 
                                 <?php include (TEMPLATEPATH . '/searchform.php'); ?>
 
+                                <div class="clearfix"></div>
+
                                 <div class="nav">
                                         <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
                                 </div>
