@@ -135,10 +135,11 @@
                                 <div class="info">
 
                                         <h1><a href="<?php echo get_option('home'); ?>/" title="<?php bloginfo('name'); ?>"><img src="<?php bloginfo('template_directory'); ?>/_/img/logo.png" alt="" /></a></h1>
-                                        <div class="description"><?php bloginfo('description'); ?></div>
+
+                                <div class="description"><?php bloginfo('description'); ?></div>
 
                                 </div>
-
+                                
                                 <?php include (TEMPLATEPATH . '/searchform.php'); ?>
 
                                 <div class="clearfix"></div>
