@@ -183,3 +183,6 @@ a {
   padding: 10px 5px;
   background-color: #fff;
   text-align: right; }
+
+.login_button .login_icons span {
+  margin-left: 10px; }
