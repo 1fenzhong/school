@@ -22,7 +22,7 @@
 
 			</div>
 			
-			<?php edit_post_link('Edit this entry','','.'); ?>
+			<?php edit_post_link('编辑此文章','','.'); ?>
 			
 		</article>
 

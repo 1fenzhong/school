@@ -17,9 +17,9 @@
 			</div>
 
 			<footer class="postmetadata">
-				<?php the_tags('Tags: ', ', ', '<br />'); ?>
-				Posted in <?php the_category(', ') ?> | 
-				<?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
+				<?php the_tags('标签： ', ', ', '<br />'); ?>
+				发表在 <?php the_category(', ') ?> | 
+				<?php comments_popup_link('没有评论 &#187;', '1 条评论 &#187;', '% 条评论 &#187;'); ?>
 			</footer>
 
 		</article>
@@ -30,7 +30,7 @@
 
                 <?php else : ?>
 
-		<h2>Not Found</h2>
+		<h2>没有找到</h2>
 
                 <?php endif; ?>
 

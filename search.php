@@ -6,7 +6,7 @@
 
 	<?php if (have_posts()) : ?>
 
-		<h2>Search Results</h2>
+		<h2>搜索结果</h2>
 
 		<?php include (TEMPLATEPATH . '/_/inc/nav.php' ); ?>
 
@@ -32,7 +32,7 @@
 
 	<?php else : ?>
 
-		<h2>No posts found.</h2>
+		<h2>没有找到相应的文章。</h2>
 
 	<?php endif; ?>
 

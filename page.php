@@ -20,7 +20,7 @@
 
 			</div>
 
-			<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
+			<?php edit_post_link('编辑此页面。', '<p>', '</p>'); ?>
 
 		</article>
 		
