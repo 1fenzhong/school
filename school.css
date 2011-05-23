@@ -23,6 +23,7 @@ a {
   position: relative;
   margin: auto;
   background: #fff;
+  height: 300px;
   border-style: solid;
   border-color: #fff;
   border-top-width: 5px;
@@ -68,33 +69,46 @@ a {
     height: 52px;
     position: relative;
     left: -5px;
-    background-color: #d71a21; }
+    z-index: 999;
+    background-color: #ff2052; }
     #header .main-nav ul {
-      margin: auto 10px;
-      text-align: center; }
-      #header .main-nav ul li {
-        display: inline;
-        padding: 0 16px; }
-      #header .main-nav ul a {
-        display: inline-block;
-        color: #fff;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 52px;
-        padding: 0;
-        width: 84px; }
-        #header .main-nav ul a:hover {
-          color: #d71a21;
-          background-color: #fff; }
-      #header .main-nav ul .current_page_item a {
-        color: #d71a21;
-        background-color: #fff; }
+      margin: 0 0 0 300px;
+      padding: 0; }
+    #header .main-nav li {
+      width: 100px;
+      height: 52px;
+      float: left;
+      color: #191919;
+      text-align: center;
+      overflow: hidden; }
+    #header .main-nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px; }
+      #header .main-nav a:hover {
+        background: none; }
+    #header .main-nav p.title {
+      padding: 13px 0; }
+    #header .main-nav .subtext {
+      padding: 15px 5px 0;
+      text-align: left; }
+    #header .main-nav .green {
+      background: #6aa63b url("_/img/green-item-bg.jpg") top left no-repeat; }
+    #header .main-nav .yellow {
+      background: #fbc700 url("_/img/yellow-item-bg.jpg") top left no-repeat; }
+    #header .main-nav .red {
+      background: #d52100 url("_/img/red-item-bg.jpg") top left no-repeat; }
+    #header .main-nav .purple {
+      background: #5122b4 url("_/img/purple-item-bg.jpg") top left no-repeat; }
+    #header .main-nav .blue {
+      background: #0292c0 url("_/img/blue-item-bg.jpg") top left no-repeat; }
   #header .user-nav {
     margin-top: 10px;
     width: 267px;
     height: 52px;
-    position: relative;
+    position: absolute;
     left: -5px;
+    z-index: 1;
     background: url(_/img/header-nav-bg.png) repeat-x; }
     #header .user-nav ul {
       margin: auto 10px;
