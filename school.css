@@ -31,8 +31,7 @@ a {
   border-right-width: 5px; }
   #header .con {
     height: 100%;
-    background: url(_/img/wrap-bg.png) 100% repeat-y;
-    padding-bottom: 32px; }
+    background: url(_/img/wrap-bg.png) 100% repeat-y; }
   #header .info {
     float: left;
     text-align: right;
