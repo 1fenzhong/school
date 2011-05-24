@@ -155,7 +155,7 @@ a {
   #lessons .post h1 {
     font-size: 16px; }
 
-.single #lessons .post {
+.page #lessons .post, .single #lessons .post {
   background-color: #f4f0ec; }
 
 #respond h2 {
@@ -166,10 +166,11 @@ a {
 #commentform p {
   margin: 5px 0; }
 
-#comment {
+#commentform input, #comment {
   border: 1px solid #ccc;
-  padding: 5px; }
-  #comment:focus {
+  padding: 5px;
+  margin: 0 0 5px; }
+  #commentform input:focus, #comment:focus {
     border: 1px solid #ff0800; }
 
 #submit {
