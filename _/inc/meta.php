@@ -1,6 +1,6 @@
 <footer class="meta">
         <div class="tags">
-                <?php the_tags('标签： ', ', ', '<br />'); ?>
+                <?php the_tags('标签： ', ' ', '<br />'); ?>
         </div>
                                 
 	<span class="byline author vcard">
