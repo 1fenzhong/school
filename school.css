@@ -152,8 +152,14 @@ a {
       background-color: #f4f0ec; }
     #lessons .post h2 {
       font-size: 16px; }
-    #lessons .post .postmetadata {
+    #lessons .post .postmetadata, #lessons .post .meta {
       margin-top: 5px; }
+      #lessons .post .postmetadata .tags a, #lessons .post .meta .tags a {
+        font-weight: bold;
+        color: #fff;
+        background-color: #0073ea; }
+        #lessons .post .postmetadata .tags a:hover, #lessons .post .meta .tags a:hover {
+          background: #ff2052; }
   #lessons .post h1 {
     font-size: 16px; }
 

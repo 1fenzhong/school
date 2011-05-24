@@ -38,13 +38,12 @@
 				<article <?php post_class() ?>>
 				
 						<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-					
-						<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
 
 						<div class="entry">
 							<?php the_content(); ?>
 						</div>
-
+					
+						<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
 				</article>
 
 			<?php endwhile; ?>

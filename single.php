@@ -15,11 +15,10 @@
 				<?php the_content(); ?>
 
 				<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
-				
-				<?php the_tags( 'Tags: ', ', ', ''); ?>
-			
-				<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
 
+                                <footer class="postmetadata">                                        
+                                        <?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
+                                </footer>
 			</div>
 			
 			<?php edit_post_link('编辑此文章','','.'); ?>

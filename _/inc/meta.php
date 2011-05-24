@@ -1,4 +1,8 @@
-<footer class="postmetadata">
+<footer class="meta">
+        <div class="tags">
+                <?php the_tags('标签： ', ', ', '<br />'); ?>
+        </div>
+                                
 	<span class="byline author vcard">
 		由 <span class="fn"><?php the_author(); ?></span>
 	</span>
