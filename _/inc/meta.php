@@ -1,7 +1,7 @@
 <footer class="meta">
-	<i>Posted on:</i> <time datetime="<?php echo date(DATE_W3C); ?>" pubdate class="updated"><?php the_time('F jS, Y') ?></time>
 	<span class="byline author vcard">
-		<i>by</i> <span class="fn"><?php the_author() ?></span>
+		由 <span class="fn"><?php the_author(); ?></span>
 	</span>
-	<?php comments_popup_link('No Comments', '1 Comment', '% Comments', 'comments-link', ''); ?>
+	<i>发表于</i> <time datetime="<?php echo date(DATE_W3C); ?>" pubdate class="updated"><?php the_time('Y年m月d日') ?></time>
+	<?php comments_popup_link('没有评论', '1条评论', '%条评论', 'comments-link', ''); ?>
 </footer>
