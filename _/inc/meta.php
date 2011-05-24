@@ -1,4 +1,4 @@
-<footer class="meta">
+<footer class="postmetadata">
 	<span class="byline author vcard">
 		由 <span class="fn"><?php the_author(); ?></span>
 	</span>

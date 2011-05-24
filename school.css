@@ -152,6 +152,8 @@ a {
       background-color: #f4f0ec; }
     #lessons .post h2 {
       font-size: 16px; }
+    #lessons .post .postmetadata {
+      margin-top: 5px; }
   #lessons .post h1 {
     font-size: 16px; }
 
