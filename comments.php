@@ -67,16 +67,6 @@
 				<label for="author">名字 <?php if ($req) echo "(请填写)"; ?></label>
 			</div>
 
-			<div>
-				<input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> />
-				<label for="email">邮箱 (不会公布) <?php if ($req) echo "(请填写)"; ?></label>
-			</div>
-
-			<div>
-				<input type="text" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" size="22" tabindex="3" />
-				<label for="url">网站</label>
-			</div>
-
 		<?php endif; ?>
 
 		<!--<p>You can use these tags: <code><?php echo allowed_tags(); ?></code></p>-->
