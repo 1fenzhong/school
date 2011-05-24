@@ -9,15 +9,14 @@ a {
     background-color: #0073ea; }
 
 #page-wrap {
-  margin: auto;
-  background: url(_/img/wrap-bg.png) 100% repeat-y;
-  border-style: solid;
-  border-color: #fff;
-  border-left-width: 10px;
-  border-right-width: 10px; }
+  width: 1000px;
+  margin: auto; }
   #page-wrap .container {
-    box-shadow: 0 0 60px 30px #ccc;
-    behavior: url(_/js/PIE.htc); }
+    width: 960px;
+    margin: auto;
+    -webkit-box-shdow: #666 0 0 30px;
+    -moz-box-shadow: #666 0 0 30px;
+    box-shadow: #666 0 0 30px; }
 
 #header {
   position: relative;
@@ -213,3 +212,6 @@ a {
 
 .login_button .login_icons span {
   margin-left: 10px; }
+
+.ie #page-wrap {
+  background: url(_/img/ie-shadow.png) 50% repeat-y; }
