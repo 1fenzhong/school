@@ -200,6 +200,8 @@ a {
       margin-bottom: 5px; }
   #sidebar .widget_categories {
     font-size: 14px; }
+  #sidebar .tagcloud a {
+    display: inline-block; }
 
 #s {
   padding: 5px;
