@@ -19,15 +19,15 @@
 	<title>
 		   <?php
 		      if (function_exists('is_tag') && is_tag()) {
-		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
+		         single_tag_title("标签 &quot;"); echo '&quot; - '; }
 		      elseif (is_archive()) {
-		         wp_title(''); echo ' Archive - '; }
+		         wp_title(''); echo ' 存档 - '; }
 		      elseif (is_search()) {
-		         echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
+		         echo '搜索 &quot;'.wp_specialchars($s).'&quot; - '; }
 		      elseif (!(is_404()) && (is_single()) || (is_page())) {
 		         wp_title(''); echo ' - '; }
 		      elseif (is_404()) {
-		         echo 'Not Found - '; }
+		         echo '没有找到 - '; }
 		      if (is_home()) {
 		         bloginfo('name'); echo ' - '; bloginfo('description'); }
 		      else {
@@ -39,15 +39,15 @@
 	
 	<meta name="title" content="<?php
 		      if (function_exists('is_tag') && is_tag()) {
-		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
+		         single_tag_title("标签 &quot;"); echo '&quot; - '; }
 		      elseif (is_archive()) {
-		         wp_title(''); echo ' Archive - '; }
+		         wp_title(''); echo ' 存档 - '; }
 		      elseif (is_search()) {
-		         echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
+		         echo '搜索 &quot;'.wp_specialchars($s).'&quot; - '; }
 		      elseif (!(is_404()) && (is_single()) || (is_page())) {
 		         wp_title(''); echo ' - '; }
 		      elseif (is_404()) {
-		         echo 'Not Found - '; }
+		         echo '没有找到 - '; }
 		      if (is_home()) {
 		         bloginfo('name'); echo ' - '; bloginfo('description'); }
 		      else {
