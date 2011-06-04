@@ -99,16 +99,6 @@
         <script src="<?php bloginfo('template_directory'); ?>/_/js/jquery.easing.1.3.js" type="text/javascript"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/_/js/animated-menu.js" type="text/javascript"></script>
 
-
-        <script type="text/javascript">
-          $(document).ready(function(){
-              $(".home .post").click(function(e){
-                  e.preventDefault();
-                  window.location = $(this).attr("url");
-              });
-          });
-	</script>
-
 </head>
 
 <body <?php body_class(); ?>>
