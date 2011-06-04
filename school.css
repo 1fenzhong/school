@@ -168,6 +168,8 @@ a {
           background-color: #ff2052; }
   #lessons .post h1 {
     font-size: 16px; }
+  #lessons .navigation {
+    margin-top: 10px; }
 
 .page #lessons .post, .single #lessons .post {
   background-color: #f4f0ec; }
