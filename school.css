@@ -1,5 +1,5 @@
 body {
-  background: url(_/img/body-bg.png) 0 160px repeat-x; }
+  background: url(_/img/body-bg.png) 0 100px repeat-x; }
 
 a {
   padding: 1px 2px;
@@ -22,7 +22,7 @@ a {
   position: relative;
   margin: auto;
   background: #fff;
-  height: 300px;
+  height: 220px;
   border-style: solid;
   border-color: #fff;
   border-top-width: 5px;
@@ -37,12 +37,14 @@ a {
     position: relative;
     top: -5px;
     left: -5px;
-    height: 142px; }
+    height: 69px; }
     #header .info h1 {
-      display: inline; }
+      display: inline;
+      margin-left: 2px; }
       #header .info h1 a {
         padding: 0;
-        overflow: hidden; }
+        overflow: hidden;
+        background: none; }
     #header .info .description {
       display: inline;
       margin-left: 6px;
