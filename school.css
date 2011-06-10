@@ -212,6 +212,24 @@ a {
   #sidebar .tagcloud a {
     display: inline-block; }
 
+#aboutus {
+  width: 600px;
+  margin-left: 80px; }
+  #aboutus .about {
+    margin-bottom: 44px; }
+
+#we .me {
+  margin-bottom: 20px; }
+  #we .me .name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 6px; }
+  #we .me .avatar {
+    float: left;
+    margin-right: 4px; }
+  #we .me .intro {
+    float: left; }
+
 #s {
   padding: 5px;
   border: 1px solid #ccc; }
