@@ -11,7 +11,7 @@
         <div id="we">
             <div class="me">
                 <h2 class="name"><?php the_author_meta( 'display_name', 1 ); ?></h2>
-                <div class="avatar"><?php echo get_avatar( 1, 200 ); ?></div>
+                <?php echo get_avatar( 1, 200 ); ?>
                 <div class="intro"><?php the_author_meta( 'description', 1 ); ?></div>
                 <div class="clearfix"></div>
             </div>
