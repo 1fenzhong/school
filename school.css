@@ -152,7 +152,8 @@ a {
     #lessons .post:hover {
       background-color: #f4f0ec; }
     #lessons .post h2 {
-      font-size: 16px; }
+      font-size: 16px;
+      margin-bottom: 4px; }
       #lessons .post h2 a {
         color: #fff;
         background-color: #000; }
