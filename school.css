@@ -146,26 +146,26 @@ a {
 #lessons {
   width: 75%;
   float: left; }
-  #lessons .post {
+  #lessons .post, #lessons .log {
     margin-right: 10px;
     padding: 10px; }
-    #lessons .post:hover {
+    #lessons .post:hover, #lessons .log:hover {
       background-color: #f4f0ec; }
-    #lessons .post h2 {
+    #lessons .post h2, #lessons .log h2 {
       font-size: 16px;
       margin-bottom: 4px; }
-      #lessons .post h2 a {
+      #lessons .post h2 a, #lessons .log h2 a {
         color: #fff;
         background-color: #000; }
-        #lessons .post h2 a:hover {
+        #lessons .post h2 a:hover, #lessons .log h2 a:hover {
           background-color: #ff2052; }
-    #lessons .post .postmetadata, #lessons .post .meta {
+    #lessons .post .postmetadata, #lessons .post .meta, #lessons .log .postmetadata, #lessons .log .meta {
       margin-top: 5px; }
-      #lessons .post .postmetadata .tags a, #lessons .post .meta .tags a {
+      #lessons .post .postmetadata .tags a, #lessons .post .meta .tags a, #lessons .log .postmetadata .tags a, #lessons .log .meta .tags a {
         font-weight: bold;
         color: #fff;
         background-color: #0073ea; }
-        #lessons .post .postmetadata .tags a:hover, #lessons .post .meta .tags a:hover {
+        #lessons .post .postmetadata .tags a:hover, #lessons .post .meta .tags a:hover, #lessons .log .postmetadata .tags a:hover, #lessons .log .meta .tags a:hover {
           background-color: #ff2052; }
   #lessons .post h1 {
     font-size: 16px; }
