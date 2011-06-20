@@ -24,9 +24,6 @@ a {
   border-top-width: 5px;
   border-left-width: 5px;
   border-right-width: 5px; }
-  #header .con {
-    height: 100%;
-    background: url(_/img/wrap-bg.png) 100% repeat-y; }
   #header .info {
     float: left;
     text-align: right;
@@ -129,15 +126,6 @@ a {
 
 .logged-in #header .user-nav {
   display: none; }
-
-#content {
-  height: 100%;
-  background: url(_/img/wrap-bg.png) 100% repeat-y;
-  padding: 0 5px;
-  border-style: solid;
-  border-color: #fff;
-  border-left-width: 5px;
-  border-right-width: 5px; }
 
 #lessons {
   width: 75%;

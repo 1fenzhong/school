@@ -105,30 +105,30 @@
 
 		<header id="header">
 
-                        <div class="con">
+                    <div id="head-top" class="">
+                        
+                        <?php include (TEMPLATEPATH . '/searchform.php'); ?>
+                        
+                    </div>
 
-                                <div class="info">
+                    <div class="info">
 
-                                        <h1><a href="<?php echo get_option('home'); ?>/" title="<?php bloginfo('name'); ?>"><img src="<?php bloginfo('template_directory'); ?>/_/img/logo.png" alt="" /></a></h1>
+                        <h1><a href="<?php echo get_option('home'); ?>/" title="<?php bloginfo('name'); ?>"><img src="<?php bloginfo('template_directory'); ?>/_/img/logo.png" alt="" /></a></h1>
 
-                                <div class="description"><?php bloginfo('description'); ?></div>
+                        <div class="description"><?php bloginfo('description'); ?></div>
 
-                                </div>
-                                
-                                <?php include (TEMPLATEPATH . '/searchform.php'); ?>
+                    </div>
 
-                                <div class="clearfix"></div>
+                    <div class="clearfix"></div>
 
-                                <div class="main-nav">
-                                        <?php wp_nav_menu( array( 'theme_location' => 'header-navi-menu', 'container' => '', 'after' => '', 'walker' => new description_walker() ) ); ?>
-                                </div>
+                    <div class="main-nav">
+                        <?php wp_nav_menu( array( 'theme_location' => 'header-navi-menu', 'container' => '', 'after' => '', 'walker' => new description_walker() ) ); ?>
+                    </div>
 
-                                <div class="user-nav">
-                                        <?php wp_nav_menu( array( 'theme_location' => 'header-user-menu' ) ); ?>
-                                </div>
+                    <div class="user-nav">
+                        <?php wp_nav_menu( array( 'theme_location' => 'header-user-menu' ) ); ?>
+                    </div>
 
-                                <div class="clearfix"></div>
-
-                        </div>
+                    <div class="clearfix"></div>
 
 		</header>
