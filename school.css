@@ -15,17 +15,12 @@ a {
     box-shadow: #666 0 0 30px; }
 
 #header {
-  position: relative;
   margin: auto;
   background: #fff;
   height: 220px; }
   #header .info {
     float: left;
-    text-align: right;
-    position: relative;
-    top: -5px;
-    left: -5px;
-    height: 69px; }
+    text-align: right; }
     #header .info h1 {
       display: inline;
       margin-left: 2px; }
@@ -56,9 +51,6 @@ a {
   #header .main-nav {
     width: 960px;
     height: 52px;
-    position: relative;
-    left: -5px;
-    z-index: 999;
     background-color: #ff2052; }
     #header .main-nav ul {
       margin: 0 0 0 300px;

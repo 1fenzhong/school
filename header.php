@@ -92,9 +92,6 @@
 
 	<?php wp_head(); ?>
 
-        <script src="<?php bloginfo('template_directory'); ?>/_/js/jquery.easing.1.3.js" type="text/javascript"></script>
-	<script src="<?php bloginfo('template_directory'); ?>/_/js/animated-menu.js" type="text/javascript"></script>
-
 </head>
 
 <body <?php body_class(); ?>>
@@ -122,11 +119,15 @@
                     <div class="clearfix"></div>
 
                     <div class="main-nav">
+
                         <?php wp_nav_menu( array( 'theme_location' => 'header-navi-menu', 'container' => '', 'after' => '', 'walker' => new description_walker() ) ); ?>
+
                     </div>
 
                     <div class="user-nav">
+
                         <?php wp_nav_menu( array( 'theme_location' => 'header-user-menu' ) ); ?>
+
                     </div>
 
                     <div class="clearfix"></div>
