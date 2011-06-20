@@ -68,9 +68,6 @@ a {
     #header .main-nav .blue {
       background: #0292c0 url("_/img/blue-item-bg.jpg") top left no-repeat; }
 
-.logged-in #header .user-nav {
-  display: none; }
-
 #lessons {
   width: 75%;
   float: left; }
