@@ -103,7 +103,7 @@ register_taxonomy('log_tag', 'log', array(
   ),
 ));
 
-//product post type
+// log post type
 add_action( 'init', 'create_post_type' );
 function create_post_type() {
   register_post_type( 'log',
