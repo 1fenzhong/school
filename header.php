@@ -105,7 +105,7 @@
 
 		<header id="header">
 
-                    <div id="head-top" class="">
+                    <div id="header-top">
                         
                         <?php include (TEMPLATEPATH . '/searchform.php'); ?>
                         
