@@ -85,10 +85,6 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/school.css">
 	
 	<script src="<?php bloginfo('template_directory'); ?>/_/js/modernizr-1.7.min.js"></script>
-
-        <!--[if lt IE 9]>
-            <script src="_/js/IE9.js"></script>
-        <![endif]-->
 	
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
