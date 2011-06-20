@@ -125,4 +125,11 @@ function create_post_type() {
       'taxonomies' => array('log_tag')));
 }
 
+function always_show_adminbar( $wp_admin_bar) {
+	if ( !is_user_logged_in() )
+	$wp_admin_bar->add_menu( array( 'title' => __( 'Log In' ), 'href' => wp_login_url() ) );
+}
+add_action( 'admin_bar_menu', 'always_show_adminbar' );
+add_filter( 'show_admin_bar', '__return_true' , 1000 );
+
 ?>

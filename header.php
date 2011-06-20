@@ -102,12 +102,6 @@
 
 		<header id="header">
 
-                    <div id="header-top">
-                        
-                        <?php include (TEMPLATEPATH . '/searchform.php'); ?>
-                        
-                    </div>
-
                     <div class="info">
 
                         <h1><a href="<?php echo get_option('home'); ?>/" title="<?php bloginfo('name'); ?>"><img src="<?php bloginfo('template_directory'); ?>/_/img/logo.png" alt="" /></a></h1>

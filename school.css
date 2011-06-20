@@ -32,22 +32,6 @@ a {
       display: inline;
       margin-left: 6px;
       font-size: 16px; }
-  #header #header-top {
-    height: 30px; }
-    #header #header-top #searchform {
-      float: right; }
-      #header #header-top #searchform #s:focus {
-        background-color: #fffdd0;
-        font-weight: bold;
-        border: 1px solid #ff0800; }
-      #header #header-top #searchform #searchsubmit {
-        font-weight: bold;
-        border: none;
-        background-color: #e3e3e3;
-        padding: 5px 8px; }
-        #header #header-top #searchform #searchsubmit:hover {
-          color: #fff;
-          background-color: #000; }
   #header .main-nav {
     width: 960px;
     height: 52px;
