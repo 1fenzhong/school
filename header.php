@@ -118,12 +118,6 @@
 
                     </div>
 
-                    <div class="user-nav">
-
-                        <?php wp_nav_menu( array( 'theme_location' => 'header-user-menu' ) ); ?>
-
-                    </div>
-
                     <div class="clearfix"></div>
 
 		</header>
