@@ -18,12 +18,7 @@ a {
   position: relative;
   margin: auto;
   background: #fff;
-  height: 220px;
-  border-style: solid;
-  border-color: #fff;
-  border-top-width: 5px;
-  border-left-width: 5px;
-  border-right-width: 5px; }
+  height: 220px; }
   #header .info {
     float: left;
     text-align: right;
