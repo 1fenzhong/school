@@ -127,9 +127,28 @@ function create_post_type() {
 
 function always_show_adminbar( $wp_admin_bar) {
 	if ( !is_user_logged_in() )
-	$wp_admin_bar->add_menu( array( 'title' => __( 'Log In' ), 'href' => wp_login_url() ) );
+        $wp_admin_bar->add_menu( array( 'id' => 'register', 'title' => __( 'Register' ), 'href' => wp_login_url() . '?action=register' ) );
+	if ( !is_user_logged_in() )
+        $wp_admin_bar->add_menu( array( 'id' => 'login', 'title' => __( 'Log In' ), 'href' => wp_login_url() ) );
+        $wp_admin_bar->add_menu( array( 'id' => 'login-st', 'title' => '用新浪微博登录', 'parent' => 'login', 'href' => site_url() . '/wp-content/plugins/social-medias-connect/start-connect.php?socialmedia=sinaweibo' ) );
+        $wp_admin_bar->add_menu( array( 'id' => 'login-qt', 'title' => '用腾讯微博登录', 'parent' => 'login', 'href' => site_url() . '/wp-content/plugins/social-medias-connect/start-connect.php?socialmedia=qqweibo' ) );
+        $wp_admin_bar->add_menu( array( 'id' => 'login-db', 'title' => '用豆瓣帐号登录', 'parent' => 'login', 'href' => site_url() . '/wp-content/plugins/social-medias-connect/start-connect.php?socialmedia=douban' ) );
+        $wp_admin_bar->add_menu( array( 'id' => 'login-ff', 'title' => '用饭否帐号登录', 'parent' => 'login', 'href' => site_url() . '/wp-content/plugins/social-medias-connect/start-connect.php?socialmedia=fanfou' ) );
+        $wp_admin_bar->add_menu( array( 'id' => 'jungle', 'title' => '讨论区', 'href' => 'http://jungle.1fenzhong.org' ) );
 }
-add_action( 'admin_bar_menu', 'always_show_adminbar' );
+add_action( 'admin_bar_menu', 'always_show_adminbar', 81 );
 add_filter( 'show_admin_bar', '__return_true' , 1000 );
+
+// admin bar css
+function style_admin_bar() { ?>
+    <style type="text/css">
+      #wp-admin-bar-jungle { margin-left:40px !important; }
+      #wp-admin-bar-jungle a { border-left:none !important; border-left:1px solid #686868 !important; border-right:1px solid #686868 !important; }
+    </style>
+<?php }
+// on backend area
+add_action( 'admin_head', 'style_admin_bar' );
+// on frontend area
+add_action( 'wp_head', 'style_admin_bar' );
 
 ?>
