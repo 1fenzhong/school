@@ -4,9 +4,9 @@
 
         <div id="lessons">
 
-                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                <?php if (have_posts()) : $counter=0; while (have_posts()) : the_post(); $counter++; ?>
                 
-		<article <?php post_class() ?> id="post-<?php the_ID(); ?>" url="<?php the_permalink() ?>">
+		<article <?php post_class() ?> id="post-<?php echo $counter; ?>" url="<?php the_permalink() ?>">
 
 			<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 
