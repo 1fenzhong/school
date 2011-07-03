@@ -84,13 +84,15 @@
 
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/school.css">
 	
-	<script src="<?php bloginfo('template_directory'); ?>/_/js/modernizr-1.7.min.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/_/js/modernizr-custom-2.0.js"></script>
 	
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
+        <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
 	<?php wp_head(); ?>
+
+        <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/_/js/jquery.multiple-bgs.min.js"></script>
 
 </head>
 
@@ -104,7 +106,7 @@
 
                     <div class="info">
 
-                        <h1><a href="<?php echo get_option('home'); ?>/" title="<?php bloginfo('name'); ?>"><img src="<?php bloginfo('template_directory'); ?>/_/img/logo.png" alt="" /></a></h1>
+                        <h1><a href="<?php echo get_option('home'); ?>/" title="<?php bloginfo('name'); ?>"><img id="logo" src="<?php bloginfo('template_directory'); ?>/_/img/logo.png" alt="" /></a></h1>
 
                         <div class="description"><?php bloginfo('description'); ?></div>
 
@@ -112,11 +114,7 @@
 
                     <div class="clearfix"></div>
 
-                    <div class="main-nav">
-
-                        <?php wp_nav_menu( array( 'theme_location' => 'header-navi-menu', 'container' => '', 'after' => '', 'walker' => new description_walker() ) ); ?>
-
-                    </div>
+                    <?php wp_nav_menu( array( 'theme_location' => 'header-navi-menu', 'container' => '', 'after' => '', 'walker' => new description_walker() ) ); ?>
 
                     <div class="clearfix"></div>
 
