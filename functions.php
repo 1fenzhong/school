@@ -8,7 +8,7 @@
 		function core_mods() {
 			if ( !is_admin() ) {
 				wp_deregister_script('jquery');
-				wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"), false);
+				wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"), false);
 				wp_enqueue_script('jquery');
 			}
 		}
@@ -41,7 +41,6 @@
     if (function_exists('register_nav_menus')){
       register_nav_menus( array(
           'header-navi-menu' => __( '头部导航菜单' ),
-          'header-user-menu' => __( '头部用户菜单' ),          
           'footer-menu' => __( '底部自定义菜单' ) 
                                 )
                           );
@@ -71,19 +70,12 @@ class description_walker extends Walker_Nav_Menu
 
     $prepend = '<strong>';
     $append = '</strong>';
-    $description  = ! empty( $item->description ) ? '<p class="subtext">'.esc_attr( $item->description ).'</p>' : '';
-
-    if($depth != 0)
-      {
-        $description = $append = $prepend = "";
-      }
 
     $item_output = $args->before;
-    $item_output .= '<p class="title"><a'. $attributes .'>';
+    $item_output .= '<a'. $attributes .'>';
     $item_output .= $args->link_before .apply_filters( 'the_title', $item->title, $item->ID );
-    $item_output .= '</a></p>';
+    $item_output .= '</a>';
     $item_output .= $args->after;
-    $item_output .= $description.$args->link_after;
     
     $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
   }
@@ -135,6 +127,8 @@ function always_show_adminbar( $wp_admin_bar) {
         $wp_admin_bar->add_menu( array( 'id' => 'login-db', 'title' => '用豆瓣帐号登录', 'parent' => 'login', 'href' => site_url() . '/wp-content/plugins/social-medias-connect/start-connect.php?socialmedia=douban' ) );
         $wp_admin_bar->add_menu( array( 'id' => 'login-ff', 'title' => '用饭否帐号登录', 'parent' => 'login', 'href' => site_url() . '/wp-content/plugins/social-medias-connect/start-connect.php?socialmedia=fanfou' ) );
         $wp_admin_bar->add_menu( array( 'id' => 'jungle', 'title' => '讨论区', 'href' => 'http://jungle.1fenzhong.org' ) );
+        if ( !is_super_admin() )
+        $wp_admin_bar->remove_menu('dashboard');
 }
 add_action( 'admin_bar_menu', 'always_show_adminbar', 81 );
 add_filter( 'show_admin_bar', '__return_true' , 1000 );
@@ -142,7 +136,7 @@ add_filter( 'show_admin_bar', '__return_true' , 1000 );
 // admin bar css
 function style_admin_bar() { ?>
     <style type="text/css">
-      #wp-admin-bar-jungle { margin-left:40px !important; }
+      #wp-admin-bar-jungle { margin-left:50px !important; }
       #wp-admin-bar-jungle a { border-left:none !important; border-left:1px solid #686868 !important; border-right:1px solid #686868 !important; }
     </style>
 <?php }
@@ -150,5 +144,13 @@ function style_admin_bar() { ?>
 add_action( 'admin_head', 'style_admin_bar' );
 // on frontend area
 add_action( 'wp_head', 'style_admin_bar' );
+
+// remove dashboard widget
+function remove_dashboard_widgets() {
+	remove_meta_box( 'dashboard_primary', 'dashboard', 'side' );
+	remove_meta_box( 'dashboard_secondary', 'dashboard', 'side' );
+} 
+
+add_action('wp_dashboard_setup', 'remove_dashboard_widgets' );
 
 ?>
