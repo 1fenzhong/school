@@ -118,6 +118,8 @@ function create_post_type() {
 }
 
 function always_show_adminbar( $wp_admin_bar) {
+        $wp_admin_bar->add_menu( array( 'id' => '1fenzhong', 'title' => __( '一分钟学堂' ), 'href' => site_url() ) );
+        $wp_admin_bar->add_menu( array( 'id' => 'jungle', 'parent' => '1fenzhong', 'title' => '叽叽喳喳', 'href' => 'http://jungle.1fenzhong.org' ) );
 	if ( !is_user_logged_in() )
         $wp_admin_bar->add_menu( array( 'id' => 'register', 'title' => __( 'Register' ), 'href' => wp_login_url() . '?action=register' ) );
 	if ( !is_user_logged_in() )
@@ -126,24 +128,11 @@ function always_show_adminbar( $wp_admin_bar) {
         $wp_admin_bar->add_menu( array( 'id' => 'login-qt', 'title' => '用腾讯微博登录', 'parent' => 'login', 'href' => site_url() . '/wp-content/plugins/social-medias-connect/start-connect.php?socialmedia=qqweibo' ) );
         $wp_admin_bar->add_menu( array( 'id' => 'login-db', 'title' => '用豆瓣帐号登录', 'parent' => 'login', 'href' => site_url() . '/wp-content/plugins/social-medias-connect/start-connect.php?socialmedia=douban' ) );
         $wp_admin_bar->add_menu( array( 'id' => 'login-ff', 'title' => '用饭否帐号登录', 'parent' => 'login', 'href' => site_url() . '/wp-content/plugins/social-medias-connect/start-connect.php?socialmedia=fanfou' ) );
-        $wp_admin_bar->add_menu( array( 'id' => 'jungle', 'title' => '讨论区', 'href' => 'http://jungle.1fenzhong.org' ) );
         if ( !is_super_admin() )
         $wp_admin_bar->remove_menu('dashboard');
 }
-add_action( 'admin_bar_menu', 'always_show_adminbar', 81 );
+add_action( 'admin_bar_menu', 'always_show_adminbar', 1 );
 add_filter( 'show_admin_bar', '__return_true' , 1000 );
-
-// admin bar css
-function style_admin_bar() { ?>
-    <style type="text/css">
-      #wp-admin-bar-jungle { margin-left:50px !important; }
-      #wp-admin-bar-jungle a { border-left:none !important; border-left:1px solid #686868 !important; border-right:1px solid #686868 !important; }
-    </style>
-<?php }
-// on backend area
-add_action( 'admin_head', 'style_admin_bar' );
-// on frontend area
-add_action( 'wp_head', 'style_admin_bar' );
 
 // remove dashboard widget
 function remove_dashboard_widgets() {
