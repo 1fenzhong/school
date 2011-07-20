@@ -95,9 +95,40 @@ register_taxonomy('log_tag', 'log', array(
   ),
 ));
 
+// dream tag
+register_taxonomy('dream_tag', 'dream', array(
+  'label' => 'Dream 标签',
+  'singular_label' => 'Dream 标签',
+  'public' => true,
+  'show_tagcloud' => false,
+  'query_var' => true,
+  'hierarchical' => false,
+  'rewrite' => array(
+    'slug' => 'dream/tag',
+    'with_front' => 'false'
+  ),
+));
+
 // log post type
 add_action( 'init', 'create_post_type' );
 function create_post_type() {
+  register_post_type( 'dream',
+    array(
+      'labels' => array(
+        'name' => __( 'Dreams' ),
+        'singular_name' => __( 'Dreams' ),
+        'add_new' => __('生产 Dream'),
+        'add_new_item' => __('生产 Dream'),
+        'rewrite' => array('slug' => '$slug'),
+                        ),
+      'menu_position' => 5,
+      'publicly_queryable' => true,
+      'capability_type' => 'post',
+      'query_var' => true,
+      'public' => true,
+      'has_archive' => true,
+      'supports' => array('title', 'editor', 'comments', 'revisions'),
+      'taxonomies' => array('dream_tag')));
   register_post_type( 'log',
     array(
       'labels' => array(
