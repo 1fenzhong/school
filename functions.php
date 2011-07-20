@@ -132,8 +132,8 @@ function create_post_type() {
   register_post_type( 'log',
     array(
       'labels' => array(
-        'name' => __( 'Log' ),
-        'singular_name' => __( 'Log' ),
+        'name' => __( 'Logs' ),
+        'singular_name' => __( 'Logs' ),
         'add_new' => __('生产 Log'),
         'add_new_item' => __('生产 Log'),
         'rewrite' => array('slug' => '$slug'),
