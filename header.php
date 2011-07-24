@@ -106,7 +106,7 @@
 
                     <div class="info">
 
-                        <h1><a href="<?php echo get_option('home'); ?>/" title="<?php bloginfo('name'); ?>"><img id="logo" src="<?php bloginfo('template_directory'); ?>/_/img/logo.png" alt="" /></a></h1>
+                        <h1><a href="<?php echo get_option('home'); ?>/" title="<?php bloginfo('name'); ?>"><img id="logo" src="<?php bloginfo('template_directory'); ?>/_/img/logo.jpg" alt="" /></a></h1>
 
                         <div class="description"><?php bloginfo('description'); ?></div>
 
