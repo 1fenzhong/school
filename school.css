@@ -30,8 +30,7 @@ img#logo {
     float: left;
     text-align: right; }
     #header .info h1 {
-      display: inline;
-      margin-left: 2px; }
+      display: inline; }
       #header .info h1 a {
         padding: 0;
         overflow: hidden;
