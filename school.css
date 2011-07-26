@@ -1,14 +1,29 @@
+h2 {
+  font-size: 18px;
+  font-weight: normal;
+  font-family: Microsoft Yahei; }
+  h2 a {
+    color: #678f11;
+    padding: 3px; }
+    h2 a:hover {
+      color: #fff;
+      background-color: #678f11; }
+
+p {
+  font-size: 14px; 
+  line-height: 150%; }
+
 a {
   padding: 0 2px 1px;
+  color: #996c33;
   text-decoration: none; }
   a:hover {
-    color: #fff700;
-    background-color: #0073ea; }
+  color: #678f11; }
 
 textarea, input, img {
   padding: 3px;
   background: #fff;
-  background: url(_/img/hd-bg-200-h.png) repeat-x 0 0, url(_/img/hd-bg-200-v.png) repeat-y 0 0, url(_/img/hd-bg-200-h.png) repeat-x 0 100%, url(_/img/hd-bg-200-v.png) repeat-y 100% 0; }
+  background: url(_/img/dot.gif) repeat; }
 
 img#logo {
   padding: 0;
@@ -21,11 +36,11 @@ img#logo {
     margin: auto;
     padding: 0 2px;
     background: #fff;
-    background: url(_/img/hd-bg-200-v.png) repeat-y 0 0, url(_/img/hd-bg-200-v.png) repeat-y 100% 0; }
+    background: url(_/img/dot.gif) repeat-x; }
 
 #header {
   margin: auto;
-  background: #fff; }
+  background: #ffffff; }
   #header .info {
     float: left;
     text-align: right; }
@@ -38,11 +53,11 @@ img#logo {
     #header .info .description {
       display: inline;
       margin-left: 6px;
-      font-size: 16px; }
+      font-size: 12px; }
   #header #menu-main {
     width: 960px;
-    background: #000;
-    background: url(_/img/hd-bg-200-h.png) repeat-x 0 0, url(_/img/hd-bg-200-h.png) repeat-x 0 100%;
+    margin: 20px 0;
+    background: #ffffff;
     text-align: center; }
     #header #menu-main li {
       width: 100px;
@@ -54,11 +69,12 @@ img#logo {
       display: inline;
       margin: 20px; }
     #header #menu-main li.current-menu-item a {
-      color: #ff2052; }
+      color: #000000; }
     #header #menu-main a {
-      color: #000;
+      color: #996c33;
       text-decoration: none;
-      font-size: 20px; }
+      font-size: 22px; 
+      font-family: Microsoft YaHei; }
       #header #menu-main a:hover {
         background: none;
         color: #ff2052; }
@@ -68,28 +84,17 @@ img#logo {
   float: left; }
   #lessons .post, #lessons .log {
     margin-right: 10px;
-    padding: 10px; }
-    #lessons .post:hover, #lessons .log:hover {
-      background-color: #f4f0ec; }
+    padding: 30px; }
     #lessons .post h2, #lessons .log h2 {
-      font-size: 16px;
-      margin-bottom: 4px; }
-      #lessons .post h2 a, #lessons .log h2 a {
-        color: #ff2052;
-        padding: 3px;
-        background: #000;
-        background: url(_/img/hd-bg-200-h.png) repeat-x 0 0, url(_/img/hd-bg-200-v.png) repeat-y 0 0, url(_/img/hd-bg-200-h.png) repeat-x 0 100%, url(_/img/hd-bg-200-v.png) repeat-y 100% 0; }
-        #lessons .post h2 a:hover, #lessons .log h2 a:hover {
-          color: #fff;
-          background-color: #ff2052; }
+      margin-bottom: 20px; }
     #lessons .post .postmetadata, #lessons .post .meta, #lessons .log .postmetadata, #lessons .log .meta {
-      margin-top: 5px; }
+      margin-top: 15px; 
+      line-height: 20px;
+      color: #7d7d7d; }
       #lessons .post .postmetadata .tags a, #lessons .post .meta .tags a, #lessons .log .postmetadata .tags a, #lessons .log .meta .tags a {
-        font-weight: bold;
-        color: #fff;
-        background-color: #0073ea; }
+        color: #678f11; }
         #lessons .post .postmetadata .tags a:hover, #lessons .post .meta .tags a:hover, #lessons .log .postmetadata .tags a:hover, #lessons .log .meta .tags a:hover {
-          background-color: #ff2052; }
+          color: #ff2052; }
   #lessons .post h1 {
     font-size: 16px; }
   #lessons .navigation {
@@ -98,12 +103,14 @@ img#logo {
       padding: 2px 0;
       background: url(_/img/hd-bg-200-h.png) repeat-x 0 0, url(_/img/hd-bg-200-h.png) repeat-x 0 100%; }
       #lessons .navigation a:hover {
-        color: #ff2052; }
+        color: #996c33; }
 
-.home #lessons .post:hover, .home #lessons log:hover {
-  background: url(_/img/hd-bg-200-h.png) repeat-x 0 0, url(_/img/hd-bg-200-v.png) repeat-y 100% 0, url(_/img/hd-bg-200-h.png) repeat-x 0 100%; }
-.home #lessons #post-1:hover {
-  background: url(_/img/hd-bg-200-v.png) repeat-y 100% 0, url(_/img/hd-bg-200-h.png) repeat-x 0 100%; }
+.home #lessons .post, .home #lessons log {
+  background: url(_/img/dot.gif) repeat-x 0 0; }
+/*
+.home #lessons #post-1 {
+  background: url(_/img/dot.gif) repeat-y 100% 0, url(_/img/hd-bg-200-h.png) repeat-x 0 100%; }
+*/
 
 .single #lessons .post, .single #lessons log {
   background: url(_/img/hd-bg-200-v.png) repeat-y 100% 0, url(_/img/hd-bg-200-h.png) repeat-x 0 100%; }
@@ -170,31 +177,27 @@ img#logo {
   padding: 10px 0;
   text-align: right; }
   #footer #menu-footer {
-    background: url(_/img/hd-bg-200-h.png) repeat-x 0 0, url(_/img/hd-bg-200-h.png) repeat-x 0 100%;
-    padding: 5px 130px 5px 0;
-    text-align: right; }
+    background: url(_/img/dot.gif) repeat-x 0 0;
+    padding: 20px 0;
+    text-align: center; }
     #footer #menu-footer li {
-      display: inline;
-      margin-left: 20px; }
+      display: inline; }
     #footer #menu-footer a {
-      font-size: 14px;
-      background: #000;
-      color: #fff; }
+      font-size: 10px;
+      color: #7d7d7d; }
       #footer #menu-footer a:hover {
-        background: #ff2052; }
+        color: #ff2052; }
 
 #tags {
   margin: 15px 10px 0 0;
   text-align: right; }
   #tags a {
     padding: 3px 5px;
-    font-weight: bold;
     margin-bottom: 5px;
     display: inline-block;
-    color: #ff2052;
-    background: url(_/img/hd-bg-200-h.png) repeat-x 0 0, url(_/img/hd-bg-200-v.png) repeat-y 0 0, url(_/img/hd-bg-200-h.png) repeat-x 0 100%, url(_/img/hd-bg-200-v.png) repeat-y 100% 0; }
+    color: #7d7d7d; }
     #tags a:hover {
-      color: #000; }
+      color: #996c33; }
 
 /* admin bar */
 #wp-admin-bar-login ul li a {
