@@ -1,46 +1,61 @@
-body {
-  background: url(_/img/body-bg.png) 0 100px repeat-x; }
+h2 {
+  font-size: 18px;
+  font-weight: normal;
+  font-family: Microsoft Yahei; }
+  h2 a {
+    color: #678f11;
+    padding: 3px; }
+    h2 a:hover {
+      color: #fff;
+      background-color: #678f11; }
+
+ol, ul {
+  list-style-position: inside; 
+  font-size: 14px;
+  line-height: 150%; }
+
+ul {
+  list-style-type: square; }
+
+p {
+  font-size: 14px; 
+  line-height: 150%; }
 
 a {
-  padding: 1px 2px;
+  padding: 0 2px 1px;
+  color: #996c33;
   text-decoration: none; }
   a:hover {
-    color: #fff700;
-    background-color: #0073ea; }
+  color: #678f11; }
+
+textarea, input {
+  padding: 3px;
+  background: #fff; }
+
+img {
+  padding: 3px;
+  background: url(_/img/dot.gif) repeat; }
+  img#logo {
+    padding: 0;
+    background: none; }
 
 #page-wrap {
-  width: 1000px;
   margin: auto; }
   #page-wrap .container {
     width: 960px;
     margin: auto;
-    -webkit-box-shdow: #666 0 0 30px;
-    -moz-box-shadow: #666 0 0 30px;
-    box-shadow: #666 0 0 30px; }
+    padding: 0 2px;
+    background: #fff;
+    background: url(_/img/dot.gif) repeat-x; }
 
 #header {
-  position: relative;
   margin: auto;
-  background: #fff;
-  height: 220px;
-  border-style: solid;
-  border-color: #fff;
-  border-top-width: 5px;
-  border-left-width: 5px;
-  border-right-width: 5px; }
-  #header .con {
-    height: 100%;
-    background: url(_/img/wrap-bg.png) 100% repeat-y; }
+  background: #ffffff; }
   #header .info {
     float: left;
-    text-align: right;
-    position: relative;
-    top: -5px;
-    left: -5px;
-    height: 69px; }
+    text-align: right; }
     #header .info h1 {
-      display: inline;
-      margin-left: 2px; }
+      display: inline; }
       #header .info h1 a {
         padding: 0;
         overflow: hidden;
@@ -48,129 +63,66 @@ a {
     #header .info .description {
       display: inline;
       margin-left: 6px;
-      font-size: 16px; }
-  #header #searchform {
-    float: right;
-    padding: 10px; }
-    #header #searchform #s:focus {
-      background-color: #fffdd0;
-      font-weight: bold;
-      border: 1px solid #ff0800; }
-    #header #searchform #searchsubmit {
-      font-weight: bold;
-      border: none;
-      background-color: #e3e3e3;
-      padding: 5px 8px; }
-      #header #searchform #searchsubmit:hover {
-        color: #fff;
-        background-color: #000; }
-  #header .main-nav {
+      font-size: 12px; }
+  #header #menu-main {
     width: 960px;
-    height: 52px;
-    position: relative;
-    left: -5px;
-    z-index: 999;
-    background-color: #ff2052; }
-    #header .main-nav ul {
-      margin: 0 0 0 300px;
-      padding: 0; }
-    #header .main-nav li {
+    margin: 20px 0;
+    background: #ffffff;
+    text-align: center; }
+    #header #menu-main li {
       width: 100px;
-      height: 52px;
-      float: left;
       color: #191919;
+      height: 50px;
+      line-height: 50px;
       text-align: center;
-      overflow: hidden; }
-    #header .main-nav a {
-      color: #fff;
+      overflow: hidden;
+      display: inline;
+      margin: 20px; }
+    #header #menu-main li.current-menu-item a {
+      color: #000000; }
+    #header #menu-main a {
+      color: #996c33;
       text-decoration: none;
-      font-size: 20px; }
-      #header .main-nav a:hover {
-        background: none; }
-    #header .main-nav p.title {
-      padding: 13px 0; }
-    #header .main-nav .subtext {
-      padding: 15px 5px 0;
-      text-align: left; }
-    #header .main-nav .green {
-      background: #6aa63b url("_/img/green-item-bg.jpg") top left no-repeat; }
-    #header .main-nav .yellow {
-      background: #fbc700 url("_/img/yellow-item-bg.jpg") top left no-repeat; }
-    #header .main-nav .red {
-      background: #d52100 url("_/img/red-item-bg.jpg") top left no-repeat; }
-    #header .main-nav .purple {
-      background: #5122b4 url("_/img/purple-item-bg.jpg") top left no-repeat; }
-    #header .main-nav .blue {
-      background: #0292c0 url("_/img/blue-item-bg.jpg") top left no-repeat; }
-  #header .user-nav {
-    margin-top: 10px;
-    width: 267px;
-    height: 52px;
-    position: absolute;
-    left: -5px;
-    z-index: 1;
-    background: url(_/img/header-nav-bg.png) repeat-x; }
-    #header .user-nav ul {
-      margin: auto 10px;
-      text-align: right; }
-      #header .user-nav ul li {
-        display: inline;
-        margin: 0 5px; }
-      #header .user-nav ul li a {
-        display: inline-block;
-        width: 53px;
-        margin-top: 12px; }
-      #header .user-nav ul a {
-        color: #fff;
-        font-weight: bold;
-        font-size: 20px; }
-        #header .user-nav ul a:hover {
-          background-color: #000; }
-      #header .user-nav ul .login a {
-        background: url(_/img/user-nav-btn.png) no-repeat; }
-      #header .user-nav ul .register a {
-        background: url(_/img/user-nav-btn.png) -78px 0 no-repeat; }
-
-.logged-in #header .user-nav {
-  display: none; }
-
-#content {
-  height: 100%;
-  background: url(_/img/wrap-bg.png) 100% repeat-y;
-  padding: 0 5px;
-  border-style: solid;
-  border-color: #fff;
-  border-left-width: 5px;
-  border-right-width: 5px; }
+      font-size: 22px; 
+      font-family: Microsoft YaHei; }
+      #header #menu-main a:hover {
+        background: none;
+        color: #ff2052; }
 
 #lessons {
   width: 75%;
   float: left; }
-  #lessons .post, #lessons .log {
+  #lessons .post, #lessons .log, #lessons .dream{
     margin-right: 10px;
-    padding: 10px; }
-    #lessons .post:hover, #lessons .log:hover {
-      background-color: #f4f0ec; }
-    #lessons .post h2, #lessons .log h2 {
-      font-size: 16px;
-      margin-bottom: 4px; }
-      #lessons .post h2 a, #lessons .log h2 a {
-        color: #fff;
-        background-color: #000; }
-        #lessons .post h2 a:hover, #lessons .log h2 a:hover {
-          background-color: #ff2052; }
-    #lessons .post .postmetadata, #lessons .post .meta, #lessons .log .postmetadata, #lessons .log .meta {
-      margin-top: 5px; }
-      #lessons .post .postmetadata .tags a, #lessons .post .meta .tags a, #lessons .log .postmetadata .tags a, #lessons .log .meta .tags a {
-        font-weight: bold;
-        color: #fff;
-        background-color: #0073ea; }
-        #lessons .post .postmetadata .tags a:hover, #lessons .post .meta .tags a:hover, #lessons .log .postmetadata .tags a:hover, #lessons .log .meta .tags a:hover {
-          background-color: #ff2052; }
+    padding: 30px; }
+    #lessons .post h2, #lessons .log h2, #lessons .dream h2 {
+      margin-bottom: 20px; }
+    #lessons .post .postmetadata, #lessons .post .meta, #lessons .log .postmetadata, #lessons .log .meta, #lessons .dream .postmetadata, #lessons .dream .meta {
+      margin-top: 15px; 
+      line-height: 20px;
+      color: #7d7d7d; }
+      #lessons .post .postmetadata .tags a, #lessons .post .meta .tags a, #lessons .log .postmetadata .tags a, #lessons .log .meta .tags a, #lessons .dream .postmetadata .tags a, #lessons .dream .meta .tags a {
+        color: #678f11; }
+        #lessons .post .postmetadata .tags a:hover, #lessons .post .meta .tags a:hover, #lessons .log .postmetadata .tags a:hover, #lessons .log .meta .tags a:hover, #lessons .dream .postmetadata .tags a:hover, #lessons .dream .meta .tags a:hover {
+          color: #ff2052; }
   #lessons .post h1 {
     font-size: 16px; }
   #lessons .navigation {
     margin-top: 10px; }
+    #lessons .navigation a {
+      padding: 2px 0;
+      background: url(_/img/hd-bg-200-h.png) repeat-x 0 0, url(_/img/hd-bg-200-h.png) repeat-x 0 100%; }
+      #lessons .navigation a:hover {
+        color: #996c33; }
+        
+.home #lessons .post, .home #lessons .log, .home #lessons .dream {
+  background: url(_/img/dot.gif) repeat-x 0 0; }
+
+.archive #lessons .post, .archive #lessons .log, .archive #lessons .dream {
+  background: url(_/img/dot.gif) repeat-x 0 0; }
+
+.single #lessons .post, .single #lessons .log, .single #lessons .dream {
+  background: url(_/img/dot.gif) repeat-x 0 0; }
 
 .page #lessons .post, .single #lessons .post {
   background-color: #f4f0ec; }
@@ -184,11 +136,8 @@ a {
   margin: 5px 0; }
 
 #commentform input, #comment {
-  border: 1px solid #ccc;
-  padding: 5px;
+  border: none;
   margin: 0 0 5px; }
-  #commentform input:focus, #comment:focus {
-    border: 1px solid #ff0800; }
 
 #submit {
   margin-top: 5px;
@@ -234,12 +183,70 @@ a {
   border: 1px solid #ccc; }
 
 #footer {
-  padding: 10px 5px;
-  background-color: #fff;
+  padding: 10px 0;
   text-align: right; }
+  #footer #menu-footer {
+    background: url(_/img/dot.gif) repeat-x 0 0;
+    padding: 20px 0;
+    text-align: center; }
+    #footer #menu-footer li {
+      display: inline; }
+    #footer #menu-footer a {
+      font-size: 10px;
+      color: #7d7d7d; }
+      #footer #menu-footer a:hover {
+        color: #ff2052; }
 
-.login_button .login_icons span {
-  margin-left: 10px; }
+#tags {
+  margin: 15px 10px 0 0;
+  text-align: right; }
+  #tags a {
+    padding: 3px 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #7d7d7d; }
+    #tags a:hover {
+      color: #996c33; }
 
-.ie #page-wrap {
-  background: url(_/img/ie-shadow.png) 50% repeat-y; }
+/* admin bar */
+#wp-admin-bar-login ul li a {
+  padding: 5px 15px 5px 50px !important;
+  min-width: 0 !important; }
+
+#wp-admin-bar-login-st a {
+  background: url(_/img/menu-icon-st.png) no-repeat 10px 50% !important; }
+
+#wp-admin-bar-login-qt a {
+  background: url(_/img/menu-icon-qt.png) no-repeat 10px 50% !important; }
+
+#wp-admin-bar-login-db a {
+  background: url(_/img/menu-icon-db.png) no-repeat 10px 50% !important; }
+
+#wp-admin-bar-login-ff a {
+  background: url(_/img/menu-icon-ff.png) no-repeat 10px 50% !important; }
+
+/* ie */
+.no-multiplebgs #header #menu-main li a {
+  color: #fff; }
+  .no-multiplebgs #header #menu-main li a:hover {
+    color: #fff;
+    text-decoration: underline; }
+.no-multiplebgs #lessons .post h2 a, .no-multiplebgs #lessons log h2 a {
+  background: none; }
+  .no-multiplebgs #lessons .post h2 a:hover, .no-multiplebgs #lessons log h2 a:hover {
+    background: #ff2052; }
+.no-multiplebgs #lessons .navigation a:hover {
+  color: #fff; }
+.no-multiplebgs #commentform input, .no-multiplebgs #commentform textarea {
+  border: 1px solid #666; }
+.no-multiplebgs #footer {
+  color: #fff;
+  background: #000; }
+  .no-multiplebgs #footer #menu-footer {
+    border-top: 2px solid #777;
+    border-bottom: 2px solid #777; }
+.no-multiplebgs #tags a {
+  border: 1px solid #666; }
+  .no-multiplebgs #tags a:hover {
+    color: #fff;
+    background: #ff2052; }
