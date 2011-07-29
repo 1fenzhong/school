@@ -9,6 +9,14 @@ h2 {
       color: #fff;
       background-color: #678f11; }
 
+ol, ul {
+  list-style-position: inside; 
+  font-size: 14px;
+  line-height: 150%; }
+
+ul {
+  list-style-type: square; }
+
 p {
   font-size: 14px; 
   line-height: 150%; }
@@ -20,14 +28,16 @@ a {
   a:hover {
   color: #678f11; }
 
-textarea, input, img {
+textarea, input {
   padding: 3px;
-  background: #fff;
-  background: url(_/img/dot.gif) repeat; }
+  background: #fff; }
 
-img#logo {
-  padding: 0;
-  background: none; }
+img {
+  padding: 3px;
+  background: url(_/img/dot.gif) repeat; }
+  img#logo {
+    padding: 0;
+    background: none; }
 
 #page-wrap {
   margin: auto; }
@@ -82,18 +92,18 @@ img#logo {
 #lessons {
   width: 75%;
   float: left; }
-  #lessons .post, #lessons .log {
+  #lessons .post, #lessons .log, #lessons .dream{
     margin-right: 10px;
     padding: 30px; }
-    #lessons .post h2, #lessons .log h2 {
+    #lessons .post h2, #lessons .log h2, #lessons .dream h2 {
       margin-bottom: 20px; }
-    #lessons .post .postmetadata, #lessons .post .meta, #lessons .log .postmetadata, #lessons .log .meta {
+    #lessons .post .postmetadata, #lessons .post .meta, #lessons .log .postmetadata, #lessons .log .meta, #lessons .dream .postmetadata, #lessons .dream .meta {
       margin-top: 15px; 
       line-height: 20px;
       color: #7d7d7d; }
-      #lessons .post .postmetadata .tags a, #lessons .post .meta .tags a, #lessons .log .postmetadata .tags a, #lessons .log .meta .tags a {
+      #lessons .post .postmetadata .tags a, #lessons .post .meta .tags a, #lessons .log .postmetadata .tags a, #lessons .log .meta .tags a, #lessons .dream .postmetadata .tags a, #lessons .dream .meta .tags a {
         color: #678f11; }
-        #lessons .post .postmetadata .tags a:hover, #lessons .post .meta .tags a:hover, #lessons .log .postmetadata .tags a:hover, #lessons .log .meta .tags a:hover {
+        #lessons .post .postmetadata .tags a:hover, #lessons .post .meta .tags a:hover, #lessons .log .postmetadata .tags a:hover, #lessons .log .meta .tags a:hover, #lessons .dream .postmetadata .tags a:hover, #lessons .dream .meta .tags a:hover {
           color: #ff2052; }
   #lessons .post h1 {
     font-size: 16px; }
@@ -104,16 +114,15 @@ img#logo {
       background: url(_/img/hd-bg-200-h.png) repeat-x 0 0, url(_/img/hd-bg-200-h.png) repeat-x 0 100%; }
       #lessons .navigation a:hover {
         color: #996c33; }
-
-.home #lessons .post, .home #lessons log {
+        
+.home #lessons .post, .home #lessons .log, .home #lessons .dream {
   background: url(_/img/dot.gif) repeat-x 0 0; }
-/*
-.home #lessons #post-1 {
-  background: url(_/img/dot.gif) repeat-y 100% 0, url(_/img/hd-bg-200-h.png) repeat-x 0 100%; }
-*/
 
-.single #lessons .post, .single #lessons log {
-  background: url(_/img/hd-bg-200-v.png) repeat-y 100% 0, url(_/img/hd-bg-200-h.png) repeat-x 0 100%; }
+.archive #lessons .post, .archive #lessons .log, .archive #lessons .dream {
+  background: url(_/img/dot.gif) repeat-x 0 0; }
+
+.single #lessons .post, .single #lessons .log, .single #lessons .dream {
+  background: url(_/img/dot.gif) repeat-x 0 0; }
 
 .page #lessons .post, .single #lessons .post {
   background-color: #f4f0ec; }
